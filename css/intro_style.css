@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+select,
+table,
+td,
+textarea,
+th,
+ul,
+span,
+strong,
+em {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    min-width: 1320px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5rem;
+    color: #333;
+}
+
+.intro{
+    height: 900px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    overflow: hidden;
+}
+.inner_intro{
+    width: 1920px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.move_intro{
+    border-radius: 30px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    width: 1320px;
+    height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: url(../images/intro/intro_bg.png) no-repeat center;
+}
+.move{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 1320px;
+    height: 500px;
+}
+.move img{
+    display: block;
+    z-index: 100;
+}
+
+.block{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+.text_intro{
+    margin-top: 450px;
+    width: 1320px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text_intro img{
+    display: block;
+}
+.intro_link a{
+    font-weight: bold;
+    margin-top: 50px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    opacity: 0.7;
+    transition: all 1s;
+}
+.intro_link a:hover{
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    opacity: 1;
+}
+
