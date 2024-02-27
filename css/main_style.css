@@ -53,7 +53,7 @@ body {
 }
 
 #wrap {
-    min-width: 1320px;
+    min-width: 1400px;
 }
 
 header {
@@ -322,7 +322,7 @@ header {
 .st_grow {
     width: 450px;
     height: 450px;
-    background: url(../images/main/section1/g_chunnyun.png) no-repeat center;
+    background: url(../images/main/section1/section1_main.png) no-repeat center;
 }
 
 .room {
@@ -353,29 +353,33 @@ header {
     height: 450px;
     position: absolute;
     top: 0;
-    left: -460px;
+    left: 0;
     opacity: 0;
-    transition: opacity 1s;
+    z-index: -1;
 }
 
 .inner_room1:hover .grow1 {
     left: -460px;
     opacity: 1;
+    z-index: 100;
 }
 
 .inner_room2:hover .grow2 {
     left: -460px;
     opacity: 1;
+    z-index: 100;
 }
 
 .inner_room3:hover .grow3 {
     left: -460px;
     opacity: 1;
+    z-index: 100;
 }
 
 .inner_room4:hover .grow4 {
     left: -460px;
     opacity: 1;
+    z-index: 100;
 }
 
 .text_section1 {
