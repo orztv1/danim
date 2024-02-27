@@ -20,7 +20,7 @@ body{
     color: #333;
 }
 #wrap{
-    min-width: 1320px;
+    min-width: 1400px;
     overflow: hidden;
 }
 header{
@@ -132,9 +132,17 @@ header{
 }
 #banner{
     background: url(../images/sub1/sub1_3.png) no-repeat center;
-    width: 1920px;
     height: 700px;
-    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    animation: next 20s linear infinite;
+}
+.inner_banner{
+    width: 1920px;
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+    background: url(../images/sub1/sub1_3.png) no-repeat center;
     animation: next 20s linear infinite;
 }
 
@@ -343,12 +351,18 @@ header{
 }
 /* bottom_banner */
 #bottom_banner{
-    width: 1920px;
     height: 500px;
+    position: relative;
     margin-top: 100px;
-    margin: 100px auto 0;
 }
-
+.inner_bottom{
+    height: 100%;
+    position: absolute;
+    width: 1920px;
+    left: 50%;
+    margin-left: -960px;
+    background: url(../images/sub1/bottom_banner.png) no-repeat center;
+}
 /* footer */
 #footer{
     height: 258px;
