@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1400px">
     <title>Only숙소만</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/sub2_style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR&display=swap" rel="stylesheet">
@@ -17,16 +18,16 @@
         <header>
             <div class="inner_header">
                 <div class="logo">
-                    <a href="index.html"><img src="images/main/logo.svg" alt="main_logo"></a>
+                    <a href="main.html"><img src="images/main/logo.svg" alt="main_logo"></a>
                 </div>
                 <span class="circle"></span>
                 <ul class="gnb">
                     <li>
                         <a href="sub1.html">About다님</a>
                     </li>
-                    <li><a href="">Only숙소만</a></li>
-                    <li><a href="">나만의 여행</a></li>
-                    <li><a href="">여행Story</a></li>
+                    <li><a href="sub2.html">Only숙소만</a></li>
+                    <li><a href="sub3.html">나만의 여행</a></li>
+                    <li><a href="sub4.html">여행Story</a></li>
                 </ul>
                 <div class="util">
                     <div class="search">
@@ -43,31 +44,28 @@
             </div>
         </header>
         <div id="banner">
-            <div class="inner_banner">
-                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                    <div data-aos="flip-down">
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="images/sub2/hotel2.jpg" alt="호텔1" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/sub2/stay1.jpg" alt="한옥스테이1" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/sub2/hotel1.jpg" alt="호텔2" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/sub2/stay2.jpg" alt="한옥스테이2" />
-                                </div>
+            <div class="banner_inner">
+                <div class="inner_banner">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/sub2/banner_img1.png" alt="배너이미지1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/sub2/banner_img2.png" alt="배너이미지2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/sub2/banner_img3.png" alt="배너이미지3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/sub2/banner_img4.png" alt="배너이미지4">
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="banner_text">
-                <img src="images/sub2/banner_text1.png" alt="배너텍스트1">
-                <img src="images/sub2/banner_text2.png" alt="배너텍스트2">
+                <div class="banner_text">
+                    <img src="images/sub2/banner_text.png" alt="배너텍스트">
+                </div>
             </div>
         </div>
         <div id="container">
@@ -79,7 +77,36 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="hanok_sales">
-                                    <img src="images/sub2/section1/hanok/thenine.png" alt="더나인">
+                                    <div class="hanok_img">
+                                        <div class="accordion">
+                                            <ul class="accordion1">
+                                                <li>
+                                                    <div> <a href="#">
+                                                            <h2>경주 더나인 한옥스테이</h2>
+                                                            <p>한옥 게스트하우스</p>
+                                                        </a> </div>
+                                                </li>
+                                                <li>
+                                                    <div> <a href="#">
+                                                            <h2>경주 더나인 한옥스테이 체크인/아웃 시간</h2>
+                                                            <p>체크인 15:00 ~ 체크아웃 11:00</p>
+                                                        </a> </div>
+                                                </li>
+                                                <li>
+                                                    <div> <a href="#">
+                                                            <h2>경주 더나인 한옥스테이 가격</h2>
+                                                            <p>1박/95,000원~</p>
+                                                        </a> </div>
+                                                </li>
+                                                <li>
+                                                    <div> <a href="#">
+                                                            <h2>경주 더나인 한옥스테이 위치</h2>
+                                                            <p>무열왕릉 인근</p>
+                                                        </a> </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                     <div class="sales_text">
                                         <div class="inner_text">
                                             <h2>경주 더나인 한옥스테이</h2>
@@ -91,7 +118,7 @@
                                                 <img src="images/icon/map.svg" alt="위치아이콘">
                                                 <strong>무열왕릉 인근</strong>
                                             </div>
-                                            <h4>1박/95,000원~</h4>
+                                            <h4 class="red">1박/95,000원~</h4>
                                             <div class="heart">
                                                 <img src="images/icon/heart_9131541.svg" alt="좋아요">
                                                 <span>463</span>
@@ -101,11 +128,43 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="slogan">
+                                        <img src="images/main/section3/slogan.png" alt="슬로건">
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="hanok_sales">
-                                    <img src="images/sub2/section1/hanok/chunnyun.png" alt="경주천년한옥스테이">
+                                    <div class="hanok_img">
+                                        <div class="accordion">
+                                            <ul class="accordion2">
+                                                <li>
+                                                    <div> <a href="#">
+                                                            <h2>경주 천년 한옥스테이</h2>
+                                                            <p>한옥 게스트하우스</p>
+                                                        </a> </div>
+                                                </li>
+                                                <li>
+                                                    <div> <a href="#">
+                                                            <h2>경주 천년 한옥스테이 체크인/아웃 시간</h2>
+                                                            <p>체크인 15:00 ~ 체크아웃 11:00</p>
+                                                        </a> </div>
+                                                </li>
+                                                <li>
+                                                    <div> <a href="#">
+                                                            <h2>경주 천년 한옥스테이 가격</h2>
+                                                            <p>1박/105,000원~</p>
+                                                        </a> </div>
+                                                </li>
+                                                <li>
+                                                    <div> <a href="#">
+                                                            <h2>경주 천년 한옥스테이 위치</h2>
+                                                            <p>불국사 인근</p>
+                                                        </a> </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                     <div class="sales_text">
                                         <div class="inner_text">
                                             <h2>경주천년한옥스테이</h2>
@@ -117,7 +176,7 @@
                                                 <img src="images/icon/map.svg" alt="위치아이콘">
                                                 <strong>불국사 인근</strong>
                                             </div>
-                                            <h4>1박/105,000원~</h4>
+                                            <h4 class="skyblue">1박/105,000원~</h4>
                                             <div class="heart">
                                                 <img src="images/icon/heart_9131541.svg" alt="좋아요">
                                                 <span>225</span>
@@ -127,11 +186,43 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="slogan">
+                                        <img src="images/main/section3/slogan.png" alt="슬로건">
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="hanok_sales">
-                                    <img src="images/sub2/section1/hanok/west.png" alt="서남산한옥스테이">
+                                    <div class="hanok_img">
+                                        <div class="accordion">
+                                            <ul class="accordion3">
+                                                <li>
+                                                    <div> <a href="#">
+                                                            <h2>서남산한옥스테이</h2>
+                                                            <p>한옥 게스트하우스</p>
+                                                        </a> </div>
+                                                </li>
+                                                <li>
+                                                    <div> <a href="#">
+                                                            <h2>서남산한옥스테이 체크인/아웃 시간</h2>
+                                                            <p>체크인 15:00 ~ 체크아웃 11:00</p>
+                                                        </a> </div>
+                                                </li>
+                                                <li>
+                                                    <div> <a href="#">
+                                                            <h2>서남산한옥스테이 가격</h2>
+                                                            <p>1박/55,000원~</p>
+                                                        </a> </div>
+                                                </li>
+                                                <li>
+                                                    <div> <a href="#">
+                                                            <h2>서남산한옥스테이 위치</h2>
+                                                            <p>삼릉 인근</p>
+                                                        </a> </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                     <div class="sales_text">
                                         <div class="inner_text">
                                             <h2>서남산한옥스테이</h2>
@@ -143,7 +234,7 @@
                                                 <img src="images/icon/map.svg" alt="위치아이콘">
                                                 <strong>삼릉인근</strong>
                                             </div>
-                                            <h4>1박/55,000원~</h4>
+                                            <h4 class="ocher">1박/55,000원~</h4>
                                             <div class="heart">
                                                 <img src="images/icon/heart_9131541.svg" alt="좋아요">
                                                 <span>397</span>
@@ -153,6 +244,9 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="slogan">
+                                        <img src="images/main/section3/slogan.png" alt="슬로건">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -161,7 +255,6 @@
                         <div class="swiper-pagination"></div>
 
                     </div>
-
                 </div>
             </div>
             <div class="section2">
@@ -400,15 +493,15 @@
                     </li>
                     <li>
                         <div class="footer_logo">
-                            <img src="images/main/footer/logo.svg" alt="logo">
+                            <img src="images/main/footer/logo.png" alt="logo">
                         </div>
                     </li>
                     <li>
                         <ul class="sns">
-                            <li><a href="#"><img src="images/main/footer/facebook.svg" alt="facebook"></a></li>
-                            <li><a href="#"><img src="images/main/footer/x.svg" alt="x"></a></li>
-                            <li><a href="#"><img src="images/main/footer/youtube.svg" alt="youtube"></a></li>
-                            <li><a href="#"><img src="images/main/footer/instagram.svg" alt="instagram"></a></li>
+                            <li><a href="#"><img src="images/main/footer/facebook.png" alt="facebook"></a></li>
+                            <li><a href="#"><img src="images/main/footer/x.png" alt="x"></a></li>
+                            <li><a href="#"><img src="images/main/footer/youtube.png" alt="youtube"></a></li>
+                            <li><a href="#"><img src="images/main/footer/instagram.png" alt="instagram"></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -422,26 +515,21 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-            effect: "cube",
-            grabCursor: true,
-            cubeEffect: {
-                shadow: true,
-                slideShadows: true,
-                shadowOffset: 20,
-                shadowScale: 0.94,
-            },
+            slidesPerView: 1,
+            spaceBetween: 0,
+            centeredSlides: true,
             autoplay: {
-                delay: 3000,
+                delay: 2400,
                 disableOnInteraction: false,
             },
-            loop: true
+            loop: true,
         });
     </script>
 
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper1", {
-            loop : true,
+            loop: true,
             pagination: {
                 el: ".swiper-pagination",
                 type: "fraction",
@@ -470,6 +558,19 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-46156385-1', 'cssscript.com');
+        ga('send', 'pageview');
+
     </script>
 
     <!-- aos js-->
