@@ -53,6 +53,7 @@ header{
     height: 40px;
     border-radius: 50%;
     border: 2px solid rgb(255, 67, 67);
+    z-index: -9;
 }
 .gnb li:nth-child(1) a:hover{
     color: rgb(255, 67, 67);

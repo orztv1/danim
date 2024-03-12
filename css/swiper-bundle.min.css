@@ -18,7 +18,7 @@
 }
 
 :root {
-    --swiper-theme-color: #fff
+    --swiper-theme-color: #838383;
 }
 
 :host {
@@ -273,7 +273,7 @@
 }
 
 :root {
-    --swiper-navigation-size: 60px
+    --swiper-navigation-size: 30px
 }
 
 .swiper-button-next,
